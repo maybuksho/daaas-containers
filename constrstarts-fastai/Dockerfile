@@ -18,7 +18,7 @@ COPY requirements.txt install_requirements.sh /tmp/
 
 
 # removal due to security risk
-RUN apt-get remove -y libxml2
+RUN apt-get remove -y libc-bin 
 RUN rm -rf /notebooks
 
 RUN bash -c '. activate fastai && pip install jupyterlab==2.1.5'
