@@ -55,7 +55,7 @@ def clean_data(df) -> pd.DataFrame:
     for col in df.columns:
         num = len(df[col].unique())
     
-        if ((len(df[col].unique()) ==1) and (col not in ['energy_eui_additional_fuel_gj_per_m_sq','energy_eui_electricity_gj_per_m_sq','energy_eui_natural_gas_gj_per_m_sq'])):
+        if ((len(df[col].unique()) <3) and (col not in ['energy_eui_additional_fuel_gj_per_m_sq','energy_eui_electricity_gj_per_m_sq','energy_eui_natural_gas_gj_per_m_sq'])):
             df.drop(col,inplace=True,axis=1)
     return df
 
