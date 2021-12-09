@@ -501,6 +501,7 @@ if __name__ == '__main__':
     parser.add_argument('--features', type=str, help='minio locationa and name of data file to be read, ideally the output file generated from feature selection i.e. feature_out')
     parser.add_argument('--param_search', type=str, help='This parameter is used to determine if hyperparameter search can be performed or not, accepted value is yes or no')
     parser.add_argument('--output_path', type=str, help='The minio location and filename where the output file should be written.')
+    parser.add_argument('--data', type=str, help='The minio location and filename where the output file should be written.')
     args = parser.parse_args()
 
     fit_evaluate(args)
