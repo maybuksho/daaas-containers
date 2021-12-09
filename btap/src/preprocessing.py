@@ -375,6 +375,8 @@ if __name__ == '__main__':
     parser.add_argument('--in_hour_gas', type=str, help='The minio location and filename for the hourly energy consumption file is located. This would be the path for the gas hourly file if it exist.')
     parser.add_argument('--in_build_params_gas', type=str, help='The minio location and filename the building simulation I/O file. This would be the path for the gas hourly file if it exist.')
     parser.add_argument('--output_path', type=str, help='The minio location and filename where the output file should be written.')
+    parser.add_argument('--data', type=str, help='The minio location and filename where the output file should be written.')
+    
     args = parser.parse_args()
 
     process_data(args)
