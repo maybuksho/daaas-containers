@@ -102,6 +102,7 @@ if __name__ == '__main__':
     parser.add_argument('--in_obj_name', type=str, help='minio locationa and name of data file to be read, ideally the output file generated from preprocessing i.e. preprocessing.out')
     parser.add_argument('--estimator_type', type=str, help='Type of estimator to be used, default is lasso')
     parser.add_argument('--output_path', type=str, help='The minio location and filename where the output file should be written.')
+    parser.add_argument('--data', type=str, help='The minio location and filename where the output file should be written.')
     args = parser.parse_args()
 
     select_features(args)
