@@ -1,4 +1,4 @@
-keras
+keras==2.6.0
 keras_tuner
 kfp==1.8.6
 kfp_pipeline_spec
@@ -14,7 +14,7 @@ s3fs
 scikit_learn
 seaborn
 tensorboard
-tensorflow>=2.6.2
+tensorflow==2.6.0
 tensorflow_gpu>=2.6.1
 xgboost==1.4.2
 openpyxl
